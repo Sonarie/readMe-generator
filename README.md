@@ -1,3 +1,33 @@
-# Professional README Generator Starter Code
+# create readme file
+    
+    
+  ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [License](#license)
+  
+  * [Questions](#questions)
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+  ## Description
+  taking user inputs and generate a readme for projects
+
+  ## Installation
+  undefined
+
+  ## Usage
+  kbkbu
+
+  ## Contributing
+  a 
+
+  ## Tests
+  rga
+
+  ## License
+  
+
+  ## Questions
+  rag h
