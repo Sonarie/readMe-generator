@@ -20,7 +20,7 @@ inquirer
     },
     {
       type: "input",
-      name: "Intallation",
+      name: "Installation",
       message: "How will the user install your project?",
     },
     {
