@@ -2,7 +2,6 @@
 var inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
-var toc = require("markdown-toc");
 
 // TODO: Create an array of questions for user input
 // const questions = () => {
@@ -35,9 +34,10 @@ inquirer
       message: "How will your project be used?",
     },
     {
-      type: "input",
+      type: "list",
       name: "License",
-      message: "Please provide the licensing information",
+      message: "Select a license",
+      choices: ["mit", "mpl-2.0", "gpl-3.0", "None"],
     },
     {
       type: "input",
@@ -59,13 +59,12 @@ inquirer
   // TODO: Create a function to write README file
   //function writeToFile(fileName, data) {}
   .then((answers) => {
-    fs.writeFile(generateMarkdown(answers), "./utils/generateMarkdown.js"),
-      then(
-        fs.copyFileSync(
-          generateMarkdown(answers),
-          "./utils/generateMarkdown.js"
-        )
-      );
+    fs.writeFile("./README.md", generateMarkdown(answers), function () {
+      console.log("file Written");
+      // fs.copyFileSync(
+      //   "./utils/generateMarkdown.js", generateMarkdown(answers)
+      // );
+    });
   })
 
   .catch((error) => {
